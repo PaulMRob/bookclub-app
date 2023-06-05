@@ -1,0 +1,40 @@
+.public {
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.btn-new {
+    border-radius: 4px;
+    background-color: #4b4a4a;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    padding: 20px;
+    width: 100%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 5px 10px 5px 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+}
+
+.btn-discard {
+    border-radius: 4px;
+    background-color: #4b4a4a;
+    border: none;
+    color: #f3ebeb;
+    font-size: 15px;
+    padding: 5px;
+    width: 6%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 5px 10px 5px 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.4s;
+}
+
+.btn-new:hover {
+    scale: 1.03;
+}
+

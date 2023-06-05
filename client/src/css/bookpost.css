@@ -1,0 +1,59 @@
+
+.input1 {
+    grid-area: title;
+    height: 2rem;
+        font-size: 20px;
+}
+
+.input2 {
+    grid-area: author;
+    height: 2rem;
+        font-size: 20px;
+}
+
+.input3 {
+    grid-area: pagenumber;
+    width: 4rem;
+    height: 2rem;
+    font-size: 20px;
+}
+
+textarea {
+    grid-area: quote;
+    margin: 0.5rem
+}
+
+.submit-btn {
+    grid-area: submit;
+    margin: 0.5rem;
+    height: 3rem;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: #4b4a4a;
+    border: none;
+    color: #FFFFFF;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit-btn:hover{
+    scale: 1.03;
+}
+
+.bookpost-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title quote"
+        "author quote"
+        "pagenumber quote"
+        "submit submit";
+    margin: 3rem 3rem 1rem 3rem;
+}
+
+.bookpost-form input {
+    margin: 0.5rem
+}

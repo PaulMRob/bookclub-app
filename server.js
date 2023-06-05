@@ -4,9 +4,12 @@ require("dotenv").config();
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const { expressjwt } = require("express-jwt");
+const path = require("path");
 
+// Middleware
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 mongoose
   .connect(process.env.MONGO_URL)
@@ -25,6 +28,10 @@ app.use(
 );
 app.use("/api/bookpost", require("./routes/bookpostRouter"));
 app.use("/api/discussion", require("./routes/discussionRouter"));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 app.listen(9000, () => {
   console.log(`Server is running on local port 9000`);

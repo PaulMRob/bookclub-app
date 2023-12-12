@@ -1,0 +1,84 @@
+.auth {
+    margin: auto;
+    width: 50%;
+    overflow: visible;
+}
+
+.auth-container {
+    border: 3px solid black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 5rem;
+    /* background: #12121240; */
+}
+
+h3 {
+    text-transform: lowercase;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    max-width: 670px;
+    margin-bottom: 14px;
+}
+
+.book-img {
+    justify-self: center;
+    width: 170px;
+    
+}
+
+.auth-p-1 {
+    
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.auth-p-2 {
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+}
+
+.auth-p-2:hover {
+    transform: scale(1.25) perspective(25px)
+}
+
+@media only screen and (max-width: 600px) {
+    .auth {
+        width: 100%;
+    }
+
+    .auth-container{
+        margin: 0;
+        border: none;
+    }
+
+    h3 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .auth-p-1 {
+        font-size: px;
+    }
+}
+
+@media only screen and (min-device-width : 601px) and (max-device-width : 1204px) {
+    .auth {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+}
+
